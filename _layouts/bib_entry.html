@@ -8,7 +8,7 @@
       <p><strong>Authors:</strong> {{ entry.author }}</p>
       {% if entry.journal %}
       <p><strong>Journal:</strong> {{ entry.journal }}</p>
-      {% elif entry.conference %}
+      {% elseif entry.conference %}
       <p><strong>Conference:</strong> {{ entry.conference }}</p>
       {% endif %}
       <p><strong>Year:</strong> {{ entry.year }}</p>
