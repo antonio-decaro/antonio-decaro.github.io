@@ -1,3 +1,53 @@
-title: Your Name
-description: Academic Profile
-theme: jakyll-theme-cayman  # Use a minimalistic theme as a base
+# Site settings
+title: "Antonio De Caro"
+description: "Academic Profile"
+baseurl: "" # the subpath of your site, e.g., /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Permalink settings
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Jekyll feed settings
+feed:
+  path: "feed.xml"
+  posts_limit: 10
+
+# Jekyll SEO Tag settings
+seo:
+  title: "Your Academic Name"
+  description: "Academic Profile"
+  image: "/assets/images/profile.jpg"
+  twitter:
+    username: "your_twitter_username"
+
+# Navigation links
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Publications
+    url: /publications/
+  - title: CV
+    url: /cv/
+  - title: Projects
+    url: /projects/
