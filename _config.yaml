@@ -4,6 +4,5 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-scholar
 scholar:
-  bibliography: _bibliography/publications.bib
   order: descending
   sort_by: year
