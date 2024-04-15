@@ -34,7 +34,7 @@ feed:
 
 # Jekyll SEO Tag settings
 seo:
-  title: "Antonio De Caro"
+  title: "Your Academic Name"
   description: "Academic Profile"
   image: "/assets/images/profile.jpg"
   twitter:
@@ -45,8 +45,10 @@ navigation:
   - title: Home
     url: /
   - title: Publications
-    url: /publications.md
+    url: "/publications/"
   - title: CV
-    url: /cv.md
-  - title: Projects
-    url: /projects.md
+    url: "/cv/"
+  # - title: Projects
+    # url: "/projects/"
+  - title: Contact
+    url: "/contact/"

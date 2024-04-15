@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <h1>{{ site.title }}</h1>
-        <nav>
+        <h1><span id="typed-name">{{ site.title }}</span></h1>
+        <nav class="nav-container">
             <ul>
                 {% for item in site.navigation %}
                     <li><a href="{{ item.url }}">{{ item.title }}</a></li>
@@ -17,12 +17,14 @@
             </ul>
         </nav>
     </header>
-
     <div class="container">
-        <div class="sidebar">
+        <aside class="sidebar">
+            <div class="profile-picture">
+                <img src="/assets/images/profile.png" alt="Profile Picture" class="profile-img">
+            </div>
             <h2>About Me</h2>
             <p>
-                Hello, I'm Antonio De Caro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Hello, I'm Antonio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <h3>Connect with Me</h3>
@@ -32,13 +34,11 @@
                 <li><a href="https://github.com/your_username">GitHub</a></li>
                 <!-- Add other social media links as needed -->
             </ul>
-        </div>
-
-        <div class="main-content">
+        </aside>
+        <main class="main-content">
             {{ content }}
-        </div>
+        </main>
     </div>
-
     <footer>
         <p>&copy; {{ site.title }} {{ site.time | date: "%Y" }}</p>
     </footer>
