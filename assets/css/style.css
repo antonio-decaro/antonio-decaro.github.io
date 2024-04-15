@@ -1,6 +1,7 @@
 /* Reset and base styles */
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -133,4 +134,116 @@ footer {
   50% {
       opacity: 0;
   }
+}
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.contact-intro {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Hover effect for email links */
+.contact-info a {
+  color: #959595;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #0056b3;
+}
+
+/* Icons */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-container span {
+  display: inline-block;
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: icon-bounce 2s infinite;
+}
+
+.game-icon {
+  background-image: url('/assets/images/game-control.png'); /* Replace with your game icon image */
+}
+
+.music-icon {
+  background-image: url('/assets/images/musical-note.png'); /* Replace with your music icon image */
+}
+
+.magic-icon {
+  background-image: url('/assets/images/education.png'); /* Replace with your magic icon image */
+}
+
+@keyframes icon-bounce {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100px; /* Adjust as needed */
+  margin-top: 10px; /* Add some space above the icons */
+}
+
+.social-icon {
+  color: #333; /* Match the color with the rest of the website */
+  margin: 0 5px; /* Add spacing around the icons */
 }

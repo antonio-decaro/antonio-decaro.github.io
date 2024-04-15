@@ -42,13 +42,13 @@ seo:
 
 # Navigation links
 navigation:
-  - title: Home
+  - title: HOME
     url: /
-  - title: Publications
+  - title: PUBLICATIONS
     url: "/publications/"
   - title: CV
     url: "/cv/"
   # - title: Projects
     # url: "/projects/"
-  - title: Contact
+  - title: CONTACT
     url: "/contact/"
