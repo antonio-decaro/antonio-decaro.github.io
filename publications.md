@@ -5,4 +5,3 @@ title: Publications
 
 # Publications
 
-{% bibliography %}

@@ -23,6 +23,7 @@ exclude:
 
 # Plugins
 plugins:
+  - jekyll-scholar
   - jekyll-feed
   - jekyll-seo-tag
 
