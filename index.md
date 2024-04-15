@@ -5,7 +5,7 @@ title: Home
 
 # Welcome to My Academic Website!
 
-![Profile Picture](assets/images/profile.jpg){: .profile-picture }
+![Profile Picture](assets/images/profile.png){: .profile-picture }
 
 I am a PhD student in [Your Department], [Your University]. This website serves as my online CV, showcasing my academic journey, publications, and projects.
 
