@@ -7,7 +7,7 @@ title: About Me
 
 Hello, I am [Your Name]. I am passionate about [Your Research Interests]. 
 
-![Profile Picture](/assets/images/profile.jpg)
+![Profile Picture](/assets/images/profile.png)
 
 ## Education
 
