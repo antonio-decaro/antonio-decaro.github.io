@@ -1,8 +1,0 @@
-title: Your Name
-description: Your academic portfolio
-theme: jekyll-theme-minimal
-plugins:
-  - jekyll-scholar
-scholar:
-  order: descending
-  sort_by: year
