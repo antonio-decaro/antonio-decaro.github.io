@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <h1>{{ site.title }}</h1>
-      <nav>
-        <ul>
-          {% for item in site.navigation %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <ul>
+                {% for item in site.navigation %}
+                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
 
-  <main class="container">
-    {{ content }}
-  </main>
-
-  <footer>
     <div class="container">
-      <p>&copy; {{ site.title }}, {{ "now" | date: "%Y" }}</p>
+        <div class="sidebar">
+            <h2>About Me</h2>
+            <p>
+                Hello, I'm Antonio De Caro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <h3>Connect with Me</h3>
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/your_username/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/your_username/">LinkedIn</a></li>
+                <li><a href="https://github.com/your_username">GitHub</a></li>
+                <!-- Add other social media links as needed -->
+            </ul>
+        </div>
+
+        <div class="main-content">
+            {{ content }}
+        </div>
     </div>
-  </footer>
-  <script src="/assets/js/main.js"></script>
+
+    <footer>
+        <p>&copy; {{ site.title }} {{ site.time | date: "%Y" }}</p>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
 </body>
-
 </html>
