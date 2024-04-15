@@ -1,8 +1,16 @@
+{% if entry.doi %}
 <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener noreferrer" class="bib-card-link">
+{% else %}
+<a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer" class="bib-card-link">
+{% endif %}
   <div class="bib-card">
       <h2>{{ entry.title }}</h2>
       <p><strong>Authors:</strong> {{ entry.author }}</p>
+      {% if entry.journal %}
       <p><strong>Journal:</strong> {{ entry.journal }}</p>
+      {% elif entry.conference %}
+      <p><strong>Conference:</strong> {{ entry.conference }}</p>
+      {% endif %}
       <p><strong>Year:</strong> {{ entry.year }}</p>
   </div>
 </a>
