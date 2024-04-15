@@ -1,3 +1,9 @@
+title: Your Name
+description: Your academic portfolio
 theme: jekyll-theme-minimal
-title: Your Academic Website
-description: A personal website showcasing my academic journey, publications, and projects.
+plugins:
+  - jekyll-scholar
+scholar:
+  bibliography: _bibliography/publications.bib
+  order: descending
+  sort_by: year
