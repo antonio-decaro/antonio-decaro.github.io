@@ -1,28 +1,22 @@
 ---
 layout: default
-title: Home
+title: About Me
 ---
 
-# Welcome to My Academic Website!
+# About Me
 
-![Profile Picture](assets/images/profile.png){: .profile-picture }
+Hello, I am [Your Name]. I am passionate about [Your Research Interests]. 
 
-I am a PhD student in Computer Science, University of Salerno. This website serves as my online CV, showcasing my academic journey, publications, and projects.
+![Profile Picture](/assets/images/profile.jpg)
 
-## About Me
+## Education
 
-- **Name**: Antonio De Caro
-- **Email**: antonio.decaro99@outlook.it
-- **LinkedIn**: https://www.linkedin.com/in/antodec/
-- **GitHub**: [GitHub Profile]
+- **Ph.D. in [Field], [University]** (Year)
+- **M.Sc. in [Field], [University]** (Year)
+- **B.Sc. in [Field], [University]** (Year)
 
-[View My CV](cv.md) | [View My Publications](publications.md) | [View My Projects](projects.md)
+## Research Interests
 
-## Research Focus
-
-My research is primarily concerned with graph analytics accelerated by Graphical Processing Units (GPUs). Graph analytics is critical for comprehending complex relationships and structures in a variety of domains, including social networks, biological networks, and transport systems. I want to create efficient algorithms and frameworks for analyzing large-scale graphs in real time by leveraging GPUs' parallel processing capabilities.
-
-
----
-
-&copy; 2024 Antonio. All Rights Reserved.
+- Interest 1
+- Interest 2
+- Interest 3
