@@ -45,8 +45,8 @@ navigation:
   - title: Home
     url: /
   - title: Publications
-    url: /publications.md
+    url: /publications/
   - title: CV
-    url: /cv.md
+    url: /cv/
   - title: Projects
-    url: /projects.md
+    url: /projects/
