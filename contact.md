@@ -17,4 +17,3 @@ title: Contact
     </div>
 </div>
 
-<script src="/assets/js/typing.js"></script>

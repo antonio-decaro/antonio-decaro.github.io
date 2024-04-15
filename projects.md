@@ -4,6 +4,7 @@ title: Projects
 ---
 
 # Academic Projects
+---
 
 ## Project 1: [Project Name]
 

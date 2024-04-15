@@ -247,3 +247,106 @@ footer {
   color: #333; /* Match the color with the rest of the website */
   margin: 0 5px; /* Add spacing around the icons */
 }
+
+/* Custom Publication Entry Styles */
+/* Custom Bibliography Entry Styles */
+
+.bib-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bib-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  display: block;
+}
+
+.bib-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bib-card h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.bib-card p {
+  margin-bottom: 5px;
+}
+
+.doi-link {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 10px;
+}
+
+.doi-link:hover {
+  color: #0056b3;
+}
+
+/* CV */
+/* Skills Section Styles */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.skill-name {
+  display: block;
+  margin-bottom: 2vh; /* Adjusted margin */
+  z-index: 1; /* Ensures it appears above the bar */
+}
+
+.skill-bar, .skill-bar-background {
+  height: 20px;
+  position: absolute;
+  top: 25px; /* Adjusted top position */
+  left: 0;
+  right: 0;
+}
+
+.skill-bar {
+  background-color: #007BFF;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.skill-bar-background {
+  background-color: #E0E0E0;
+  width: 100%;
+}
+
+/* Button Styles */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

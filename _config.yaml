@@ -44,11 +44,18 @@ seo:
 navigation:
   - title: HOME
     url: /
-  - title: PUBLICATIONS
-    url: "/publications/"
   - title: CV
     url: "/cv/"
+  - title: PUBLICATIONS
+    url: "/publications/"
   # - title: Projects
     # url: "/projects/"
   - title: CONTACT
     url: "/contact/"
+
+scholar:
+  source: _bibliography/
+  bibliography_template: bib_entry
+  sort_by: year
+  order: descending
+  style: apa
