@@ -17,8 +17,8 @@ title: CV
       <li><b>Name</b>: Antonio De Caro</li>
       <li><b>Nationality</b>: Italian</li>
       <li><b>Gender</b>: Male</li>
+      <li><b>Date of Birth</b>: 12 March 1999</li>
       <li><b>Email</b>: antonio.decaro99@outlook.it</li>
-      <li><b>GitHub</b>: antonio-decaro</li>
     </ul>
   </div>
 </div>
