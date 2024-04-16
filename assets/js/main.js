@@ -51,4 +51,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     type();
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const showBackgroundBtn = document.getElementById('show-background');
+    const showResearchBtn = document.getElementById('show-research');
+    const backgroundSection = document.getElementById('background-section');
+    const researchSection = document.getElementById('research-section');
 
+    showBackgroundBtn.addEventListener('click', function() {
+        researchSection.style.opacity = '0';
+        showBackgroundBtn.classList.add('active');
+        showResearchBtn.classList.remove('active');
+        setTimeout(() => {
+            backgroundSection.style.opacity = '1';
+            backgroundSection.style.display = 'block';
+            researchSection.style.display = 'none';
+        }, 300);
+    });
+
+    showResearchBtn.addEventListener('click', function() {
+        backgroundSection.style.opacity = '0';
+        showResearchBtn.classList.add('active');
+        showBackgroundBtn.classList.remove('active');
+        setTimeout(() => {
+            researchSection.style.opacity = '1';
+            backgroundSection.style.display = 'none';
+            researchSection.style.display = 'block';
+        }, 300);
+    });
+});

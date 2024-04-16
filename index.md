@@ -13,6 +13,13 @@ I'm always eager to learn and grow. I love taking on new challenges and finding 
 
 # Hey there, I'm Antonio!
 ---
+<div class="toggle-buttons">
+    <button id="show-background" class="btn btn-secondary active">Meet Antonio!</button>
+    <button id="show-research" class="btn btn-secondary">Diving Deep into Research</button>
+</div>
+
+<div id="background-section">
+
 Ever wondered how to blend the thrill of gaming, the magic of music, and the misteries of the universe into a PhD journey? Well, that's me! Born in the sunny village of Mercato San Severino near Salerno, Italy, I'm on a quest at the University of Salerno to unravel the wonders of Graph Analytics on GPUs. But hey, life isn't all about graphs and codes, right?
 
 <div class="icon-container"><span class="game-icon"></span></div>
@@ -24,14 +31,27 @@ Music is the heartbeat of my soul. Alongside gaming, I express my love for melod
 <div class="icon-container"><span class="magic-icon"></span></div>
 My academic journey began in Salerno, where I completed my Bachelor's degree. I further pursued my Master's with a focus on Cloud Computing, which took me all the way to Sweden during my Erasmus. Now, I'm back at the University of Salerno as a PhD student, with Biagio Cosenza guiding my research adventures.
 
-## Diving Deep into Research
+</div>
+
+<div id="research-section" style="display:none;">
+
+
+<div>
 <i class="fas fa-rocket"></i>
-In the expansive realm of digital landscapes, I find myself deeply immersed in the captivating world of graphs! <i class="fas fa-chart-network"></i> My research revolves around leveraging the computational power of GPUs, exploring the synergy between heterogeneity and efficiency through the SYCL programming model. <i class="fas fa-laptop-code">
+In the expansive realm of digital landscapes, I find myself deeply immersed in the captivating world of graphs! <i class="fas fa-chart-network"></i> My research revolves around leveraging the computational power of GPUs, exploring the synergy between heterogeneity and efficiency through the SYCL programming model. <i class="fas fa-laptop-code"></i>
+</div>
 
+<div>
 Beyond this, I'm venturing into the intriguing domain of frequency scaling on GPUs, pushing the boundaries of high-performance computing to new heights.
+</div>
 
+<div>
 As a PhD student at the University of Salerno <i class="fas fa-graduation-cap"></i>, I'm on an journey to unravel these cutting-edge technologies' mysteries and shape the future of computational science.
+</div>
 
+
+<div>
 Feel free to reach out if you're intrigued by these topics or simply want to dive into exciting discussions about the latest advancements in tech and science! <i class="fas fa-envelope"></i>
+</div>
 
-
+</div>

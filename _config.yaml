@@ -11,6 +11,9 @@ theme: null
 # Permalink settings
 permalink: pretty
 
+# Custom 404 page
+permalink: /404.html
+
 # Exclude from processing
 exclude:
   - Gemfile
