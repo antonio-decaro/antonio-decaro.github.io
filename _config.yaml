@@ -8,9 +8,6 @@ url: "" # the base hostname & protocol for your site
 markdown: kramdown
 theme: null
 
-# Permalink settings
-permalink: pretty
-
 # Custom 404 page
 permalink: /404.html
 
