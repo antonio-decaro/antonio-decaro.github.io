@@ -42,7 +42,7 @@ seo:
 
 # Navigation links
 navigation:
-  - title: HOME
+  - title: ABOUT
     url: /
   - title: CV
     url: "/cv/"
