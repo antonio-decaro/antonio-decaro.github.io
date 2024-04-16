@@ -21,9 +21,16 @@ body {
   padding: 20px;
 }
 
+/* Hide sidebar inside the container by default */
+.container .sidebar-hidden {
+  transform: translateX(-100%);
+  display: none;
+}
+
 .sidebar {
   flex: 1;
   max-width: 300px;
+  transition: transform 0.3s ease;
 }
 
 .main-content {
@@ -105,11 +112,13 @@ main {
 }
 
 footer {
+  position: relative;
+  width: 100%;
+  height: auto;
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 1em 0;
-  position: relative;
   margin-top: 20px;
 }
 
@@ -135,6 +144,7 @@ footer {
       opacity: 0;
   }
 }
+
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
@@ -203,7 +213,6 @@ footer {
 .btn-primary {
   background-color: #007BFF;
   color: #fff;
-  border: none;
 }
 
 .btn-primary:hover {
@@ -225,7 +234,6 @@ footer {
   background-color: #007BFF;
   color: #fff;
 }
-
 
 /* Initial styles for the sections */
 #background-section {
@@ -265,15 +273,15 @@ footer {
 }
 
 .game-icon {
-  background-image: url('/assets/images/game-control.png'); /* Replace with your game icon image */
+  background-image: url('/assets/images/game-control.png');
 }
 
 .music-icon {
-  background-image: url('/assets/images/musical-note.png'); /* Replace with your music icon image */
+  background-image: url('/assets/images/musical-note.png');
 }
 
 .magic-icon {
-  background-image: url('/assets/images/education.png'); /* Replace with your magic icon image */
+  background-image: url('/assets/images/education.png');
 }
 
 @keyframes icon-bounce {
@@ -292,17 +300,16 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 100px; /* Adjust as needed */
-  margin-top: 10px; /* Add some space above the icons */
+  max-width: 100px;
+  margin-top: 10px;
 }
 
 .social-icon {
-  color: #333; /* Match the color with the rest of the website */
-  margin: 0 5px; /* Add spacing around the icons */
+  color: #333;
+  margin: 0 5px;
 }
 
 /* Custom Publication Entry Styles */
-/* Custom Bibliography Entry Styles */
 
 .bib-card-link {
   text-decoration: none;
@@ -348,25 +355,39 @@ footer {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .skill {
   flex: 1;
   text-align: center;
   position: relative;
+  margin: 0 10px;
+}
+
+.skill-names {
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+
+.skill-bars {
+  margin: 0;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  display: flex;
 }
 
 .skill-name {
+  flex: 1;
   display: block;
-  margin-bottom: 2vh; /* Adjusted margin */
-  z-index: 1; /* Ensures it appears above the bar */
+  margin-bottom: 2vh;
+  z-index: 1;
 }
 
 .skill-bar, .skill-bar-background {
   height: 20px;
   position: absolute;
-  top: 25px; /* Adjusted top position */
   left: 0;
   right: 0;
 }
@@ -404,3 +425,60 @@ footer {
   background-color: #0056b3;
 }
 
+/* Mobile styles */
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-element {
+  flex: 1;
+  width: 100%;
+}
+
+.cv-picture {
+  display: none;
+}
+
+.personal-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.personal-info-container .cv-picture {
+  flex: 1;
+  min-width: 180px;
+  width: 100%;
+}
+.personal-info-container .personal-info {
+  flex: 3;
+}
+
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .sidebar {
+    max-width: 100%;
+  }
+  .profile-picture {
+    display: none;
+  }
+  .sidebar-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .cv-picture {
+    display: flex;
+  }
+}

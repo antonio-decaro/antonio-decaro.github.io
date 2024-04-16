@@ -8,11 +8,20 @@ title: CV
 
 ## Personal Information
 
-- **Name**: Antonio De Caro
-- **Nationality**: Italian
-- **Gender**: Male
-- **Email**: [antdecaro@unisa.it](mailto:antdecaro@unisa.it)
-- **GitHub**: [antonio-decaro](https://github.com/antonio-decaro)
+<div class="personal-info-container">
+  <div class="cv-picture">
+    <img src="/assets/images/profile.png" alt="Profile Picture" class="profile-img">
+  </div>
+  <div class="personal-info">
+    <ul>
+      <li><b>Name</b>: Antonio De Caro</li>
+      <li><b>Nationality</b>: Italian</li>
+      <li><b>Gender</b>: Male</li>
+      <li><b>Email</b>: antonio.decaro99@outlook.it</li>
+      <li><b>GitHub</b>: antonio-decaro</li>
+    </ul>
+  </div>
+</div>
 
 ## Education
 
@@ -46,25 +55,29 @@ title: CV
 ## Digital Skills
 
 <div class="skills">
-    <div class="skill">
-        <span class="skill-name">C/C++</span>
-        <div class="skill-bar-background"></div>
-        <div class="skill-bar" data-percent="100%"></div>
+    <div class="skill-names">
+      <span class="skill-name">C/C++</span>
+      <span class="skill-name">SYCL</span>
+      <span class="skill-name">GPU Programming</span>
+      <span class="skill-name">Python</span>
     </div>
-    <div class="skill">
-        <span class="skill-name">SYCL</span>
-        <div class="skill-bar-background"></div>
-        <div class="skill-bar" data-percent="95%"></div>
-    </div>
-    <div class="skill">
-        <span class="skill-name">GPU Programming</span>
-        <div class="skill-bar-background"></div>
-        <div class="skill-bar" data-percent="90%"></div>
-    </div>
-    <div class="skill">
-        <span class="skill-name">Python</span>
-        <div class="skill-bar-background"></div>
-        <div class="skill-bar" data-percent="75%"></div>
+    <div class="skill-bars">
+      <div class="skill">
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar" data-percent="100%"></div>
+      </div>
+      <div class="skill">
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar" data-percent="95%"></div>
+      </div>
+      <div class="skill">
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar" data-percent="90%"></div>
+      </div>
+      <div class="skill">
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar" data-percent="75%"></div>
+      </div>
     </div>
 </div>
 
