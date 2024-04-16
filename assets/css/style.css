@@ -458,7 +458,7 @@ footer {
 }
 
 /* Responsive styles */
-@media (max-width: 1290px) {
+@media (max-width: 1291px) {
   .container {
     flex-direction: column-reverse;
     align-items: center;
