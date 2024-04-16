@@ -481,3 +481,64 @@ footer {
     display: flex;
   }
 }
+
+.fade-in {
+  animation: fadeOutIn 0.5s normal;
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+
+#index {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#index .index-item {
+  display: block;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  position: relative; /* Added */
+}
+
+#index .index-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%; /* Adjust based on the desired line length */
+  background-color: gray;
+}
+
+#index .index-item a {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Background color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  height: 100%; /* Set height to fill the container */
+}
+
+#index .index-item a:hover {
+  background-color: #007BFF; /* Hover background color */
+  color: #fff; /* Hover text color */
+}
+#index .index-item a.active {
+  background-color: #007BFF; /* Hover background color */
+  color: #fff; /* Hover text color */
+}

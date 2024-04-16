@@ -81,9 +81,7 @@ title: CV
     </div>
 </div>
 
-## CV Download
-
-You can download my CV in PDF format by clicking the button below:
+---
 
 [Download CV](/assets/files/cv.pdf){: .btn .btn-primary }
 
