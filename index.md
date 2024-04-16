@@ -29,7 +29,7 @@ When I'm not diving deep into GPUs, you'll find me conquering virtual worlds, ba
 Music is the heartbeat of my soul. Alongside gaming, I express my love for melodies through the enchanting keys of a piano. Whether it's arranging some tunes or playing beloved soundtracks, the piano is my sanctuary.
 
 <div class="icon-container"><span class="magic-icon"></span></div>
-My academic journey began in Salerno, where I completed my Bachelor's degree. I further pursued my Master's with a focus on Cloud Computing, which took me all the way to Sweden during my Erasmus. Now, I'm back at the University of Salerno as a PhD student, with Biagio Cosenza guiding my research adventures.
+My academic journey began in Salerno, where I completed my Bachelor's degree. I further pursued my Master's with a focus on Cloud Computing, which took me all the way to Sweden during my Erasmus. Now, I'm back at the University of Salerno as a PhD student, with Biagio Cosenza <a href="https://orcid.org/0000-0002-8869-6705"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a> guiding my research adventures.
 
 </div>
 
