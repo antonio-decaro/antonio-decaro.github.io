@@ -253,7 +253,6 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  classifier-reborn
   css_parser
   feedjira
   httparty
