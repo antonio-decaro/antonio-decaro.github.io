@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-My academic journey began in Salerno, Italy, where I completed my Bachelor’s degree. I then pursued a Master’s degree focused on Cloud Computing, which included an Erasmus experience in Sweden. Now, I’ve returned to Salerno for pursuing a PhD under the guidance of Biagio Cosenza <a href="https://orcid.org/0000-0002-8869-6705"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>. 
+My academic journey began in Salerno, Italy, where I completed my Bachelor’s degree in Computer Science. I then pursued a Master’s degree focused on Cloud Computing, which included an Erasmus experience in Sweden where I wrote my Thesis. Currently, I’m back in Salerno pursuing a PhD under the guidance of Biagio Cosenza <a href="https://orcid.org/0000-0002-8869-6705"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"/></a>, continuing my passion for computer science and research.
 
 I specialize in Graph Analytics on GPUs, exploring the synergy between heterogeneity and efficiency through the SYCL programming model. My research extends into frequency scaling on GPUs, aiming to push the boundaries of high-performance computing.
 
