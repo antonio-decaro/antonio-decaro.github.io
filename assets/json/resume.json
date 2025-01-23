@@ -46,6 +46,17 @@
   ],
   "education": [
     {
+      "institution": "University of Salerno",
+      "location": "Italy",
+      "url": "https://www.unisa.it/",
+      "area": "Computer Science - High Performance Computing",
+      "studyType": "PhD",
+      "startDate": "2023-11",
+      "endDate": "Current",
+      "score": "",
+      "courses": ["HPC", "Graph Analytics", "GPU Programming", "Heterogeneous Programming Model", "Energy"]
+    },
+    {
       "institution": "University of Salerno, University of Skövde",
       "location": "Italy, Sweden",
       "url": "https://www.unisa.it/",
