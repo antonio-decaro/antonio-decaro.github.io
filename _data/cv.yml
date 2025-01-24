@@ -9,91 +9,109 @@
       value: Italian, English
     - name: E-Mail
       value: antonio.decaro99@outlook.it
+    - name: Gender
+      value: Male
 
 - title: Education
   type: time_table
   contents:
+    - title: PhD
+      institution: University of Salerno
+      department: Computer Science
+      year: Now
+      maindescription: PhD Schoalrship funded by E4 and PNRR.
+      description:
+        - "<u>Advisor</u>: Biagio Cosenza"
+        - "<u>Topics</u>: HPC, Graph Analytics, GPU Programming, Heterogeneous Programming Models, Energy Efficient Computing"
     - title: Master's Degree
       institution: University of Salerno, University of Skövde
-      year: 2023
+      department: Computer Science - Cloud Computing
+      year: 2020 - 2023
+      # maindescription: Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
       description:
-        - Descrption 1.
-        - 110/110 cum laude.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "<u>Grade</u>: 110/110 cum laude"
+        - "<u>Thesis</u>: Developing Educational Serious Games via a Cloud Solution"
+        - "<u>Topics</u>: Cloud Computing, Serverless Computing, High Performance Computing, Advanced Algorithm Design, Internet of Things, Concurrent, Parallel and Cloud Programming, Cybersecurity"
+    - title: Bachelor's Degree
+      institution: University of Salerno
+      department: Computer Science
+      year: 2017 - 2020
+      # maindescription: Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
       description:
-        - Description 1.
-        - Description 2.
+        - "<u>Grade</u>: 110/110 cum laude"
+        - "<u>Thesis</u>: Implementation in Java of eﬃcient algorithms for classifying large amounts of data"
+        - "<u>Topics</u>: Procedural Programming e OOP, Software Engineering, Web and Mobile development, Algorithm Design and Computational Theory, Operative Systems and Network, Data Bases, Discrete Mathematics, Mathematical analysis, Statistics, Operative Research"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: University Teaching Assistant
+      institution: University of Salerno
+      department: Computer Science
+      year: 2024 - Now
+      maindescription: Conducting extracurricular activities aimed at teaching and deepening topics related to the study and development of algorithms.
+    - title: Scholarship for carrying out research activities
+      institution: University of Salerno
+      department: Computer Science
+      year: 2023
+      maindescription: Optimize performance and energy consumption of LIGEN codes on Intel GPU architecture.
+    - title: Erasmus
+      institution: University of Skövde
+      department: Computer Science
+      year: 2022
+      maindescription: Erasums+ experience where I had the oppporunity to write my Master's Thesis.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Awards
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: App Challenge VIII Edition
+      year: 2022-02-12
+      maindescription: First place in the App Challenge VIII Edition with the project 'Bloodcalm'. This challenge is a competition between students of the University of Salerno, where they have to develop an application in association with a company.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items:
+#         - Nobel Prize in Physics
+#         - Matteucci Medal
+#     - year: 2029
+#       items:
+#         - Max Planck Medal
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Digital Skills
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - "<u>Excellent Knowledge</u>: C++, SYCL, oneAPI, Python"
+        - "<u>Good Knowledge</u>: Java, Bash"
+        - "<u>Discrete Knowledge</u>: CUDA, Linux"
+    - title: Organizational Skills
       items:
-        - Description 1.
-        - Description 2.
+        - "<u>Problem Solving</u>: I've always had a schematic approach to life, which has helped me become skilled at addressing problems in a variety of contexts."
+        - "<u>Activity Planning</u>: I've always thought it's important to be able to combine the necessary with the entertaining. I'm quite pleased of my ability to prioritize everything I do."
+    - title: Communication and Interpersonal Skills
+      items:
+        - "<u>Ability to connect with new people</u>: I've always made attempts to get in touch with new people to learn about their perspectives on various issues, especially throughout my time at university and abroad."
+        - "<u>Teamowork</u>: I worked on a number of university projects during my time in university, which helped me develop my
+teamwork abilities. I'm still improving this skill during my PhD."
+
+- title: Languages
+  type: nested_list
+  contents:
+    - title: Italian
+      items:
+        - Native
+    - title: English
+      items:
+        - "<u>Listening</u>: C1"
+        - "<u>Reading</u>: C1"
+        - "<u>Writing</u>: C1"
+        - "<u>Spoken Production</u>: C1"
+        - "<u>Spoken Interaction</u>: C1"
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Gaming, Playing Music, Sports, Movies
