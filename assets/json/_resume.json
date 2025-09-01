@@ -42,8 +42,7 @@
       "highlights": ["HPC", "GPU"]
     }
   ],
-  "volunteer": [
-  ],
+  "volunteer": [],
   "education": [
     {
       "institution": "University of Salerno",
@@ -65,7 +64,15 @@
       "startDate": "2020-08",
       "endDate": "2023-02",
       "score": "110/110 cum laude",
-      "courses": ["Cloud Computing", "Serverless Computing", "High Performance Computing", "Advanced Algorithm Design", "Internet of Things", "Concurrent, Parallel and Cloud Programming", "Cybersecurity"]
+      "courses": [
+        "Cloud Computing",
+        "Serverless Computing",
+        "High Performance Computing",
+        "Advanced Algorithm Design",
+        "Internet of Things",
+        "Concurrent, Parallel and Cloud Programming",
+        "Cybersecurity"
+      ]
     },
     {
       "institution": "University of Salerno",
@@ -76,7 +83,18 @@
       "startDate": "2017-08",
       "endDate": "2020-11",
       "score": "110/110 cum laude",
-      "courses": ["Procedural Programming e OOP", "Software Engineering", "Web and Mobile development", "Algorithm Design and Computational Theory", "Operative Systems and Network", "Data Bases", "Discrete Mathematics", "Mathematical analysis", "Statistics", "Operative Research."]
+      "courses": [
+        "Procedural Programming e OOP",
+        "Software Engineering",
+        "Web and Mobile development",
+        "Algorithm Design and Computational Theory",
+        "Operative Systems and Network",
+        "Data Bases",
+        "Discrete Mathematics",
+        "Mathematical analysis",
+        "Statistics",
+        "Operative Research."
+      ]
     }
   ],
   "awards": [
@@ -87,15 +105,9 @@
       "summary": "First place in the App Challenge VIII Edition with the project 'Bloodcalm'. This challenge is a competition between students of the University of Salerno, where they have to develop an application in association with a company."
     }
   ],
-  "certificates": [
-    
-  ],
-  "publications": [
-    
-  ],
-  "skills": [
-    
-  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
   "languages": [
     {
       "language": "Italian",
@@ -108,13 +120,7 @@
       "icon": ""
     }
   ],
-  "interests": [
-    
-  ],
-  "references": [
-   
-  ],
-  "projects": [
-    
-  ]
+  "interests": [],
+  "references": [],
+  "projects": []
 }

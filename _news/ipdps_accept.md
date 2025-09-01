@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm happy to announce that our paper "*Phase-based Frequency Scaling for Energy-efficient Heterogeneous Computing*" got accepted in the proceedings of IPDPS'25 :sparkles: :smile:
+I'm happy to announce that our paper "_Phase-based Frequency Scaling for Energy-efficient Heterogeneous Computing_" got accepted in the proceedings of IPDPS'25 :sparkles: :smile:
