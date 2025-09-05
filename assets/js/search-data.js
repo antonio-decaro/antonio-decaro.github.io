@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-i-m-happy-to-announce-that-our-paper-phase-based-frequency-scaling-for-energy-efficient-heterogeneous-computing-got-accepted-in-the-proceedings-of-ipdps-25-sparkles-smile",
+        },{id: "post-a-post-with-math",
+      
+        title: "a post with math",
+      
+      description: "an example of a blog post with some math",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/sample-posts/2015/10/20/math.html";
+        
+      },
+    },{id: "news-i-m-happy-to-announce-that-our-paper-phase-based-frequency-scaling-for-energy-efficient-heterogeneous-computing-got-accepted-in-the-proceedings-of-ipdps-25-sparkles-smile",
           title: 'I’m happy to announce that our paper “Phase-based Frequency Scaling for Energy-efficient Heterogeneous...',
           description: "",
           section: "News",},{id: "news-i-m-thrilled-to-share-that-our-paper-sygraph-a-portable-heterogeneous-graph-analytics-framework-for-gpus-has-been-accepted-to-icpp-2025-the-54th-international-conference-on-parallel-processing-this-work-presents-sygraph-a-high-performance-portable-framework-designed-to-efficiently-execute-graph-analytics-on-heterogeneous-architectures-using-sycl-it-aims-to-address-key-challenges-in-leveraging-gpus-for-large-scale-graph-workloads-offering-both-performance-and-portability-across-platforms-if-you-are-interested-in-it-and-want-to-have-some-spoiler-about-the-project-make-sure-to-check-the-github-repository-stay-tuned-for-more-updates-as-we-head-to-icpp-2025",
