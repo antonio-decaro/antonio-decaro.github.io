@@ -11,6 +11,8 @@
   selected={true},
   pdf={SC25.pdf},
   abbr={SC},
+  bibtex_show={},
+  doi={10.1145/3712285.3759782},
   abstract={Subgraph isomorphism is a fundamental graph problem with applications in diverse domains from biology to social network analysis. Of particular interest is molecular matching, which uses a subgraph isomorphism formulation for the drug discovery process. While subgraph isomorphism is known to be NP-complete and computationally expensive, in the molecular matching formulation a number of domain constraints allow for efficient implementations. This paper presents SIGMo, a high-throughput, portable subgraph isomorphism framework for GPUs, specifically designed for batch molecular matching. SIGMo takes advantage of the specific domain formulation to provide a more efficient filter-and-join strategy: the framework introduces a novel multi-level iterative filtering technique based on neighborhood signature encoding to efficiently prune candidates prior to a GPU-optimized join phase using a stack-based DFS traversal. The GPU implementation is written in SYCL, allowing portable execution on AMD, Intel, and NVIDIA GPUs. Our experimental evaluation on a large dataset from ZINC demonstrates up to $1470\times$ speedup over state-of-the-art subgraph isomorphism frameworks, and achieves a throughput of 7.7 billion matches per second on a cluster with 256 GPUs.}
 }
 
@@ -22,6 +24,8 @@
   selected={true},
   pdf={ICPP25.pdf},
   abbr={ICPP},
+  doi={10.1145/3754598.3754615},
+  bibtex_show={true},
   abstract={Graph analytics play a crucial role in a wide range of fields, including social network analysis, bioinformatics, and scientific computing, due to their ability to model and explore complex relationships. However, optimizing graph algorithms is inherently difficult due to their memory-bound constraints, often resulting in poor performance on modern massively parallel hardware. In addition, most state-of-the-art implementations are designed in CUDA for NVIDIA GPUs, and thus they can not run on supercomputers equipped with AMD and Intel GPUs. To address these challenges, we propose SYgraph, a portable heterogeneous graph analytics framework written in SYCL. SYgraph provides an efficient two-layer bitmap data layout optimized for GPU memory, eliminates the need for pre- or post-processing steps, and abstracts the complexity of working with diverse target platforms. Experimental results demonstrate that SYgraph delivers competitive performance against state-of-the-art frameworks on datasets with up to 21 million nodes and 530 million edges on NVIDIA GPUs while being able to target any SYCL-supported device, such as AMD and Intel GPUs. }
 }
 
@@ -33,7 +37,6 @@
   selected={false},
   pdf={IWOCL25.pdf},
   abbr={Poster},
-  html={https://doi.org/10.1145/3731125.3731132},
   doi={10.1145/3731125.3731132},
   bibtex_show={true},
   abstract={Graph analytics serves as an essential tool for modeling and exploring complex relationships in a variety of domains, including social networks, bioinformatics, and scientific computing. These applications often involve analyzing massive and intricate datasets, making it critical to optimize graph algorithms for modern hardware. However, achieving optimal performance on massively parallel architectures is a challenging task due to the memory-bound nature of graph computations and their inherently irregular workloads. Existing graph processing frameworks, such as Gunrock, Tigr, or SEP-Graph, have made strides in optimizing these workloads, but are predominantly designed for NVIDIA GPUs using CUDA. This design choice restricts their applicability in environments equipped with other high-performance hardware, such as AMD and Intel GPUs, which now power some of the world’s fastest supercomputers.}
@@ -47,7 +50,9 @@
   selected={true},
   pdf={IPDPS25.pdf},
   abbr={IPDPS},
-  abstract={Energy efficiency has been a major challenge for exascale computing.  Frequency scaling is a powerful technique to achieve energy savings in modern heterogeneous systems, and can be applied either at a coarse granularity, by application, or at a fine granularity, by setting the frequency for each computational kernel. The chosen granularity significantly impacts the performance and energy consumption of applications due to frequency-change overhead. We propose a novel phase-based method that minimizes the frequency-change overhead and improves performance and energy efficiency on heterogeneous multi-GPU systems. Our approach detects different phases through application profiling and DAG analysis, and sets an optimal frequency for each phase. Our methodology also considers MPI programs, where the overhead can be hidden by overlapping frequency-change with communication. Experimental results show up to 37{%} energy saving and 1.87x speedup for various benchmarks on a single GPU, and 68{%} energy saving and 3.63x speedup on two multi-GPU applications.}
+  abstract={Energy efficiency has been a major challenge for exascale computing.  Frequency scaling is a powerful technique to achieve energy savings in modern heterogeneous systems, and can be applied either at a coarse granularity, by application, or at a fine granularity, by setting the frequency for each computational kernel. The chosen granularity significantly impacts the performance and energy consumption of applications due to frequency-change overhead. We propose a novel phase-based method that minimizes the frequency-change overhead and improves performance and energy efficiency on heterogeneous multi-GPU systems. Our approach detects different phases through application profiling and DAG analysis, and sets an optimal frequency for each phase. Our methodology also considers MPI programs, where the overhead can be hidden by overlapping frequency-change with communication. Experimental results show up to 37{%} energy saving and 1.87x speedup for various benchmarks on a single GPU, and 68{%} energy saving and 3.63x speedup on two multi-GPU applications.},
+  doi={10.1109/IPDPS64566.2025.00078},
+  bibtex_show={true}
 }
 
 @article{de2022developing,
@@ -57,6 +62,5 @@
   year={2022},
   html={https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Ahis%3Adiva-22319},
   abbr={Master Thesis},
-  selected={true},
   abstract={Cloud computing is a current trend in information technology and has become an important part of many industries. In the educational games field, cloud computing has the potential to revolutionize how educational games are created, delivered, and consumed.This research aims to contribute to a better understanding of how cloud computing can be integrated into the development of educational games and how developers can utilize its powerful tools to create games that are not only more engaging but also more effective in terms of learning outcomes and deployment speed. To address this issue, this thesis investigates the practicalities of integrating cloud computing with educational games using the fundamentals of ”Educational Serious Games as a Service” (ESGaaS) which highlight a set of characteristics that enable the execution of educational games in a cloud environment. This research takes into account the requirements of the ”Happy Heart” game in order to develop and evaluate such a model, as well as to identify an architecture that is compatible with the ESGaaS model and the quality criteria necessary for such an architecture. By applying a design science research method, we developed a prototype that addresses the needs of an ESGaaS-compliant architecture, and we evaluated it by highlighting the sensitivity points, risks, non-risks, and tradeoffs of such an architecture. This research has demonstrated that deploying educational games according to the characteristics of ”Educational Serious Games as a service” can solve some of the challenges of educational game development and lead to faster deployment of the game, improved learning outcomes, and easier assessment of student performance.}
 }
