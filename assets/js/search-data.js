@@ -57,7 +57,12 @@ ninja.data = [{
           section: "News",},{id: "news-i-m-very-proud-to-announce-that-our-paper-sigmo-a-portable-and-high-throughput-gpu-framework-for-subgraph-isomorphism-in-molecular-matching-has-been-accepted-at-sc-2025-the-international-conference-for-high-performance-computing-networking-storage-and-analysis-this-work-introduces-sigmo-the-first-portable-gpu-framework-tailored-for-the-molecular-matching-problem-by-combining-novel-filtering-strategies-with-batched-execution-across-heterogeneous-gpus-sigmo-achieves-unprecedented-throughput-and-performance-portability-scaling-efficiently-across-nvidia-amd-and-intel-accelerators-sc-is-the-premier-conference-in-the-field-of-high-performance-computing-and-i-m-truly-excited-to-have-the-opportunity-to-present-our-work-there-stay-tuned-for-more-details-as-we-head-towards-sc-2025-in-st-louis",
           title: 'I’m very proud to announce that our paper, “SIGMo: A Portable and High-Throughput...',
           description: "",
-          section: "News",},{id: "projects-sygraph",
+          section: "News",},{id: "projects-sigmo",
+          title: 'SIGMo',
+          description: "High-Throughput Batched Subgraph Isomorphism on GPUs for Molecular Matching",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/SIGMo/";
+            },},{id: "projects-sygraph",
           title: 'SYgraph',
           description: "A library for Graph Analytics tasks on Heterogeneous GPUs",
           section: "Projects",handler: () => {
