@@ -1,0 +1,29 @@
+- title: "Application for Batched Drug Discovery on GPUs"
+  level: "Master Thesis"
+  status: "Available"
+  short_description: >
+    Development of a Python application that interfaces with a SYCL-based computational backend to accelerate molecular matching tasks. 
+    The project involves using Python tools for heterogeneous computing (<code>dpctl</code>) to connect high-level workflows with optimized low-level kernels.
+  supervisors:
+    - "Dr. Antonio De Caro"
+    - "Prof. Biagio Cosenza"
+
+- title: "Accelerating Graph Algorithms on GPUs"
+  level: "Bachelor Thesis"
+  status: "Available"
+  short_description: >
+    Implementation and benchmarking of graph algorithms on GPUs by using SYgraph, a framework for parallel graph applications.
+  supervisors:
+    - "Dr. Antonio De Caro"
+    - "Prof. Biagio Cosenza"
+
+- title: "Performance evaluation of Python Data-Parallel Control Library"
+  level: "HPC Project"
+  status: "Available"
+  short_description: >
+    This project evaluates the performance of the Python Data-Parallel Control Library (<code>dpctl</code>) across different workloads. 
+    It benchmarks its data-parallel execution model, analyzes overheads, and compares results with low-level frameworks 
+    to assess its suitability for high-performance and heterogeneous computing environments.
+  supervisors:
+    - "Dr. Antonio De Caro"
+    - "Prof. Biagio Cosenza"

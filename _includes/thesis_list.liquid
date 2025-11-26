@@ -1,0 +1,165 @@
+{% comment %}
+  <div class="thesis-list">
+
+    {% assign theses = site.data.theses %}
+
+    {% for thesis in theses %}
+    <div class="card mt-3 mb-3 p-3">
+
+      <!-- Title -->
+      <h3 class="card-title">{{ thesis.title }}</h3>
+
+      <!-- Metadata line -->
+      <p class="thesis-meta">
+        <span class="badge badge-dark">{{ thesis.level }}</span>
+
+        {% if thesis.status == "Available" %}
+        <span class="badge badge-success">Available</span>
+        {% else %}
+        <span class="badge badge-secondary">{{ thesis.status }}</span>
+        {% endif %}
+      </p>
+
+      <!-- Short description (intentionally vague) -->
+      <p class="thesis-description">
+        {{ thesis.short_description }}
+      </p>
+
+      <!-- Supervisors -->
+      {% if thesis.supervisors %}
+      <p class="thesis-supervisors">
+        <strong>Supervisor{% if thesis.supervisors.size > 1 %}s{% endif %}:</strong>
+        {{ thesis.supervisors | join: ", " }}
+      </p>
+      {% endif %}
+
+    </div>
+    {% endfor %}
+
+  </div>
+{% endcomment %}
+
+<div id="thesis-list" class="thesis-list">
+  {% assign theses = site.data.theses %}
+
+  {% for thesis in theses %}
+    <div class="card mt-3 mb-3 p-3 thesis-card">
+      <!-- Title -->
+      <h3 class="card-title">{{ thesis.title }}</h3>
+
+      <!-- Metadata line -->
+      <p class="thesis-meta">
+        <span class="badge badge-dark">{{ thesis.level }}</span>
+
+        {% if thesis.status == 'Available' %}
+          <span class="badge badge-success">Available</span>
+        {% else %}
+          <span class="badge badge-secondary">{{ thesis.status }}</span>
+        {% endif %}
+      </p>
+
+      <!-- Short description -->
+      <p class="thesis-description">
+        {{ thesis.short_description }}
+      </p>
+
+      <!-- Supervisors -->
+      {% if thesis.supervisors %}
+        <p class="thesis-supervisors">
+          <strong
+            >Supervisor{% if thesis.supervisors.size > 1 %}s{% endif %}:</strong
+          >
+          {{ thesis.supervisors | join: ', ' }}
+        </p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Pagination controls -->
+<div id="thesis-pagination" class="thesis-pagination mt-3"></div>
+
+<style>
+  /* Scrollable area */
+  #thesis-list {
+    max-height: 600px; /* adjust to taste */
+    overflow-y: auto;
+  }
+
+  .thesis-pagination button {
+    margin: 0 3px;
+  }
+
+  .thesis-pagination button.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const perPage = 5; // how many theses per “page”
+    const cards = Array.from(document.querySelectorAll('#thesis-list .thesis-card'));
+    const totalPages = Math.ceil(cards.length / perPage);
+    const pagContainer = document.getElementById('thesis-pagination');
+
+    if (cards.length === 0 || totalPages <= 1) {
+      // Nothing (or only one page) to paginate
+      return;
+    }
+
+    function showPage(page) {
+      const start = (page - 1) * perPage;
+      const end = start + perPage;
+
+      cards.forEach((card, idx) => {
+        card.style.display = idx >= start && idx < end ? '' : 'none';
+      });
+
+      // Update active button
+      pagContainer.querySelectorAll('button').forEach((btn) => {
+        btn.classList.toggle('active', Number(btn.dataset.page) === page);
+      });
+
+      // Optional: scroll back to top of the thesis box
+      document.getElementById('thesis-list').scrollTop = 0;
+    }
+
+    function renderButtons() {
+      pagContainer.innerHTML = '';
+
+      // Prev button
+      const prev = document.createElement('button');
+      prev.textContent = '«';
+      prev.className = 'btn btn-sm btn-light';
+      prev.addEventListener('click', () => {
+        const current = Number(pagContainer.querySelector('button.active')?.dataset.page || 1);
+        if (current > 1) showPage(current - 1);
+      });
+      pagContainer.appendChild(prev);
+
+      // Numbered buttons
+      for (let p = 1; p <= totalPages; p++) {
+        const btn = document.createElement('button');
+        btn.textContent = p;
+        btn.dataset.page = p;
+        btn.className = 'btn btn-sm btn-light';
+        btn.addEventListener('click', () => showPage(p));
+        pagContainer.appendChild(btn);
+      }
+
+      // Next button
+      const next = document.createElement('button');
+      next.textContent = '»';
+      next.className = 'btn btn-sm btn-light';
+      next.addEventListener('click', () => {
+        const current = Number(pagContainer.querySelector('button.active')?.dataset.page || 1);
+        if (current < totalPages) showPage(current + 1);
+      });
+      pagContainer.appendChild(next);
+    }
+
+    renderButtons();
+    showPage(1);
+  });
+</script>
