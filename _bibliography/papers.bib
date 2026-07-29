@@ -21,6 +21,7 @@ However, efficiently processing hypergraphs on GPUs remains challenging due to t
 	slides={slides/PDP26_1.pdf},
 	abbr={PDP},
   preview={best_paper_award.png},
+	code={https://github.com/antonio-decaro/hypergraph-gpu-label-propagation},
 	bibtex_show={true}
 }
 
@@ -73,7 +74,7 @@ However, efficiently processing hypergraphs on GPUs remains challenging due to t
   pdf={ICPP25.pdf},
 	slides={slides/ICPP25.pdf},
   abbr={ICPP},
-  code={https://github.com/unisa-hpc/SYgraph},
+  code={https://github.com/antonio-decaro/SYgraph},
   doi={10.1145/3754598.3754615},
   bibtex_show={true},
   abstract={Graph analytics play a crucial role in a wide range of fields, including social network analysis, bioinformatics, and scientific computing, due to their ability to model and explore complex relationships. However, optimizing graph algorithms is inherently difficult due to their memory-bound constraints, often resulting in poor performance on modern massively parallel hardware. In addition, most state-of-the-art implementations are designed in CUDA for NVIDIA GPUs, and thus they can not run on supercomputers equipped with AMD and Intel GPUs. To address these challenges, we propose SYgraph, a portable heterogeneous graph analytics framework written in SYCL. SYgraph provides an efficient two-layer bitmap data layout optimized for GPU memory, eliminates the need for pre- or post-processing steps, and abstracts the complexity of working with diverse target platforms. Experimental results demonstrate that SYgraph delivers competitive performance against state-of-the-art frameworks on datasets with up to 21 million nodes and 530 million edges on NVIDIA GPUs while being able to target any SYCL-supported device, such as AMD and Intel GPUs. }
